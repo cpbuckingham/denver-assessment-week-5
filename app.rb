@@ -21,7 +21,10 @@ class ContactsApp < Sinatra::Base
   end
 
   get "/" do
-    "Hello week 5"
+    erb :homepage
+  end
+  get "/register" do
+    erb :register
   end
 
 end
